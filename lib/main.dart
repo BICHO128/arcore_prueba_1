@@ -68,8 +68,8 @@ class _ArHomeState extends State<ArHome> {
       showWorldOrigin: false,
       showFeaturePoints: false,
       handleTaps: true,
-      handlePans: true,
-      handleRotation: true,
+      handlePans: false,
+      handleRotation: false,
     );
 
     arObjectManager?.onInitialize();
@@ -104,7 +104,7 @@ class _ArHomeState extends State<ArHome> {
     final node = ARNode(
       type: NodeType.localGLTF2,
       uri: modeloSeleccionado,
-      scale: Vector3(0.25, 0.25, 0.25),
+      scale: Vector3(0.15, 0.15, 0.15),
       position: Vector3(0, 0, 0),
       rotation: Vector4(1, 0, 0, 0),
     );
